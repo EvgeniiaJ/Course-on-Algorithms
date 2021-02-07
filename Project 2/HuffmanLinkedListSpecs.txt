@@ -1,0 +1,24 @@
+Project 2
+
+
+You are to implement the Huffman ordered linked list using insertion sort.
+  	
+I. Input:  A text file contains a list of <char  prob> pairs with the  following format. 
+ // note: The input prob are integer, has been multiplied by 100, i.e., a prob equal to .40 will be given as 40.
+
+Example:
+	char1  prob1  
+	char2  prob2
+	char3  prob3
+:
+:
+charn  probn  
+
+
+
+II. Output: a text file. The output format is given below.
+
+listHead -->(“dummy”, 0, next’s chStr1)-->( chStr1, prob1, next’s chStr2)...... --> (chStrj, probj, NULL)--> NULL
+
+For example: 
+listHead -->(“dummy”, 0, “b”)-->( “b”, 5, “a”) -->( “a”, 7, “d”)............ --> (“x”, 45, NULL)--> NULL
