@@ -53,7 +53,7 @@ public class LinkedList{
 			node = node.getNext();
 		}
 		
-		outputString += "NULL";
+		outputString += "(\"" + node.getCharString() + "\", " + node.getProbability() + ", NULL)" + " --> NULL";
 		try {
 			output.write(outputString);
 		}
