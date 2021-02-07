@@ -1,0 +1,19 @@
+Project 1
+
+Compute the frequencies of characters in a given input file. (Ignore all tabs, spaces and line returns)	     
+
+
+I. InFile: a txt file
+	
+	
+II. OutFile: a txt file with the following format:
+
+**** >>> (DO NOT print any characters that have zero count.)
+   
+	char1  count
+	char2  count
+	char3  count
+	char4  count
+	:
+	:
+	:
