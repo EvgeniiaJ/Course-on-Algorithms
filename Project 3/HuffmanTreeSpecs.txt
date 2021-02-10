@@ -1,0 +1,34 @@
+      Project 3
+
+This project is a continuation of your project 2 to include step 3 and step 4 of the Huffman coding algorithm
+steps (there are four algorithm steps, see below, will be asked in exam-1).
+Re-use your codes in your project 2; however, in order to implement steps 3 and 4, the list nodes in your
+project 2 will need to be modified to become tree nodes.
+ 
+After the tree construction, you are to traverse the Huffman binary tree in the order of:
+	a) pre-order 
+	b) in-order
+	c) post-order
+	
+	
+Note:  Huffman encoding and decoding will be our project 4.
+
+I. Input: A file contains a list of <char prob> pairs with the following format. The input prob are integer,
+has been multiplied by 100, i.e., a prob equal to .40 will be given as 40, char should be treated as string. 
+
+Example:
+
+char1  prob1  
+char2  prob2
+char3  prob3
+:
+:
+charn  probn  
+
+
+
+II. Outputs: 
+- outFile1: A text file containing the Huffman <char	code> pairs 
+- outFile2: A text file containing the pre-order, in-order, and
+post-order traversals of the Huffman binary tree
+- outFile3: for your debugging outputs. See output format below for detail.
