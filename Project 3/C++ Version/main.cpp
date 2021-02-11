@@ -18,7 +18,7 @@ int main(int argc, char** argv) {
 
 		
 		input.open(argv[1]);
-		debugging.open(argv[2]);
+		debuging.open(argv[2]);
 		codes.open(argv[3]);
 		traversals.open(argv[4]);
 		
