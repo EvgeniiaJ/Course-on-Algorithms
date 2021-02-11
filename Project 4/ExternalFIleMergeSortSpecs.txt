@@ -1,0 +1,11 @@
+        Project 4
+        
+You are to implement the External File Merge Sort
+
+I. Input: two sorted input files 
+
+  a) input1.txt - a file containg a sequence of sorted integers
+  b) input2.txt - a file containg a sequense of sorted integers 
+
+
+II. Output: a sorted text file combining integers from both input files
