@@ -1,0 +1,33 @@
+      Project 6:
+There are four (4) run-length encoding/decoding methods. In this project, you are to implement Method #1. 
+
+Method #1:  include zero and no wrap-around. 
+Method #2:  without zero and no wrap-around.
+Method #3:   include zero and wrap-around.
+Method #4:   without zero and wrap-around.
+
+
+I. Input: a txt file representing an image (gray-scale or binary), where 
+	the first text line has 4 integers, representing the "header" of the input image  	
+numRows, numCols, minVal, maxVal, follows by rows and cols of pixel values (integers).
+   
+	Example-1 for gray-scale image,
+	
+5 8 0 9  // The image has 5 rows, 8 columns, min value is 0 and max value is 9
+0 0 8 8 8 8 9 9
+9 0 7 7 8 8 9 0
+0 0 9 9 9 9 9 9
+9 9 1 1 8 8 2 2
+3 3 1 1 5 5 5 0
+   
+II. a) Encoded file (NOT from args): to be created during the run-time, to store EncodeMethod1.
+The format for the result of an encoded image is given below. 
+
+		5 8 0 9 
+		1   	
+    0 0 0 2 	
+    0 2 8 4  	
+	  0 6 9 2  	 
+ :
+   
+        b)  Decoded file (NOT from args):  is created during the run-time to store EncodeMethod1_Decoded.
