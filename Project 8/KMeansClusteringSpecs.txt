@@ -1,0 +1,55 @@
+            Project 8: K-means Clustering
+            
+Problem statement: Given a list of 2-D points, and a cluster number, K, the task is to partition the input point set
+into K clusters such that points within a cluster are closer to the centroid of their own cluster centroid than to
+the centroids of all other clusters.
+
+I. Input:
+  a) Input-1 - inFile: a text file with the following format:
+  The first text line is the dimension (#of rows and # of columns) of the image array, 
+  The second text line is number of points in the data point set, then
+  follows by a list of points in x-y coordinates.
+	
+For example:
+		40  50  // The image has 40 rows and 50 columns
+		25  	// There are 25 data points in the point set
+    		12  30 // A point on row 12 and column 30
+     		10  21 // A point on row 10 and column 21
+    		:	
+		:
+  
+  b) Input-3: K value as number of clusters to devide data points into
+
+
+II. Output:
+
+outFile: 2D displays of the result of clustering after each iteration. 
+(Call  prettyPrint method to output 2-D arrays, one per iteration. See PrettyPrintImgAry method below.) 
+*** make sure the output of your 2D arrays all line-up row by row and column by column.
+
+For example (the clustering results of the input in the above):
+
+
+*** Result of iteration 1 ****
+ 
+    1 1 1      
+  1 1 1 2      
+    2 2       
+          1 2
+        1 2 2 
+        1 2 2  
+        2 2 2 
+:
+:
+:
+:
+
+*** Result of iteration 4 ****
+ 
+    1 1 1      
+  1 1 1 1      
+    1 1       
+          2 2
+        2 2 2 
+        2 2 2  
+        2 2 2 
