@@ -1,0 +1,17 @@
+      Project 9: Radix Sort 
+      
+You are to implement the radix-sort on integers in a text file, where integers may contain
+mixtures of positive and negative integers.
+
+Remarks:
+1. Two hash tables of 10 buckets used in the Radix sort; each of the hash table is an array
+of *linked list queues*. 			
+2. A stack (linked list) is used to hold the data (created as nodes) then move to the first
+hash table to begin sorting.
+
+I. Input: one input txt file.
+  inFile: a text file contains a list of integers (may or may not contain negative numbers). 
+
+II. Output : There will be two output files.
+  outFile1: for the result of the sorted data.
+  outFile2: for debugging purposes. 
