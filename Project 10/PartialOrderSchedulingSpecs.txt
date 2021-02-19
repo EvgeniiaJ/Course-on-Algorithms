@@ -1,0 +1,81 @@
+            Project 9: Scheduling
+            
+You are to implement the Partial Ordering, dependency graph, and scheduling problem.
+
+Problem statement: 
+	Given a directed (dependency) graph, G = <N, E>, the task is to construct a schedule table based on the given partial-ordering (list of edges) in the graph. If the graph has a cycle, you will report to the user that the given graph contains cycles. 
+
+
+In this specs, nodes and jobs are the same thing and used interchangeable.
+
+As taught in the class, there are four options in the scheduling:
+(1) using limited processors where each job takes 1 unit of processing time;
+(2) using unlimited processors where each job takes 1 unit of processing time;
+(3) using limited processors where jobs take variable unit of processing time;
+(4) using unlimited processors where jobs take variable unit of processing time.
+
+In this project we will combine the above four options into one.  
+That is, your project will be able to handle all these four options!
+The number of processors are given within command line arguments. 
+
+You will be given two sets of test data, where each set include a file contains the dependency graph and a file contains processing time for each node.  
+
+1) The graph in data1 contains cycles and job time for each node is 1.
+
+2) The graph in data2 does not contain cycles and job times for nodes are variable. Run your program three times as follows:
+
+    a) Run your program once on data1 set using 3 processors.
+    b) Run your program once on data2 set using 3 processors. 
+   	c) Run your program with numNodes + 3 processors // meaning, unlimited.
+
+*** Include in your *hard copies the four results of the three runs (a, b, c) of the above.
+
+
+1) inFile1: a text file representing the dependency graph, G=<N, E>.
+The first number in inFile1 is the number of nodes in the graph; 
+	then follows by a list of edges (dependency) <ni, nj>,	
+where 0 < ni , nj <= numNodes. (Note: In this project, we do not use 0 as nodeId and nodeId from 1 to numNodes are in the graph.
+
+For example:
+    	6	// Graph has 6 nodes
+	1  2 	// 2 is a dependent of 1
+    		1  4 	// 4 is a dependent of 1
+    		4  3 	// 3 is a dependent of 4
+		4  2 // 2 is a dependent of 4			
+:
+		:
+2) inFile2: a text file contains the processing times for nodes.
+	The first number in inFile2 is the number of nodes in the graph; 
+	     then follows by a list of pairs, <ni, ti>, where
+		ni is the node’s id and ti is the unit of processing times for node ni.
+	
+	For example: jobs take 1 unit of processing time;
+    		6	// Graph has 6 nodes
+     		1  1 	// job time for node 1 is 1
+    		2  1 	// job time for node 2 is 1
+		3  1 	// job time for node 3 is 1
+			:
+			:
+ another example: jobs take variable of processing time
+    		6	// there are 6 nodes in the input graph
+     		1  3 	// job time for node 1 is 3
+    		2  4 	// job time for node 2 is 4
+		3  1 	// job time for node 3 is 1
+			:
+			:
+ 3) number processors.
+	 
+
+II. Outputs:
+
+1) outFile1: (use argv) 
+
+	The schedule table, nicely formatted.
+	For example:
+        
+	     -0---1---2---3---4---5---6---7---. . .
+	P(1)| 1 | 1 | 7 | 3 | 3 | 3 | - | 6 	. . .
+ 	    --------------------------------- . . .
+	P(2)| 2 | 4 | 4 | 4 | - | 5 | 5 | -   . . .
+	    --------------------------------- . . .
+	P(3)| etc.
