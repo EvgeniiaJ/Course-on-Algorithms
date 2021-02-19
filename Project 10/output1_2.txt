@@ -1,3 +1,5 @@
+  results based on input parameters: graph1.txt, jobTime1.txt output1_1.txt, output1_2.txt, 3
+  
 OPEN-->("0", 0, "1") --> ("1", 1, "1") --> ("7", 1, "1") --> NULL
 OPEN-->("0", 0, "1") --> NULL
 OPEN-->NULL
